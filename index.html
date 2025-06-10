@@ -1,510 +1,75 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slim Pouch | Tas Mini Premium untuk Pergi Kemanapun</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --cream: #F5F0E6;
-            --wine: #772432;
-            --brown: #8B4513;
-            --black: #1A1A1A;
-        }
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            color: var(--black);
-            background-color: var(--cream);
-            scroll-behavior: smooth;
-        }
-        
-        .font-serif {
-            font-family: 'Playfair Display', serif;
-        }
-        
-        .hero-bg {
-            background: linear-gradient(to bottom, var(--cream) 60%, var(--brown) 100%);
-        }
-        
-        .product-image {
-            filter: drop-shadow(0 20px 15px rgba(139, 69, 19, 0.15));
-            transition: transform 0.3s ease;
-        }
-        
-        .product-image:hover {
-            transform: translateY(-5px);
-        }
-        
-        .feature-card {
-            background-color: rgba(245, 240, 230, 0.8);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(139, 69, 19, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(139, 69, 19, 0.1);
-        }
-        
-        .countdown-box {
-            background: linear-gradient(45deg, var(--wine), var(--brown));
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(119, 36, 50, 0.3);
-        }
-        
-        .testimonial-card {
-            min-width: 300px;
-            background-color: rgba(245, 240, 230, 0.9);
-            border: 1px solid rgba(139, 69, 19, 0.2);
-        }
-        
-        .testimonial-slider {
-            animation: slide 25s infinite linear;
-        }
-        
-        @keyframes slide {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-150%); }
-        }
-        
-        @media (max-width: 768px) {
-            .testimonial-slider {
-                animation: slide 40s infinite linear;
-            }
-            
-            @keyframes slide {
-                0% { transform: translateX(0); }
-                100% { transform: translateX(-300%); }
-            }
-        }
-        
-        .sticky-banner {
-            animation: float 3s ease-in-out infinite;
-        }
-        
-        @keyframes float {
-            0% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0); }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buy Lightweight Crossbody Bag</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f7f7f7;
+      text-align: center;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 24px;
+      color: #333;
+    }
+    img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .price {
+      font-size: 22px;
+      color: #000;
+      margin: 10px 0;
+    }
+    .btn {
+      padding: 15px 25px;
+      font-size: 18px;
+      margin: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+    }
+    .paypal-btn {
+      background: #0070ba;
+      color: #fff;
+    }
+    .stripe-btn {
+      background: #635bff;
+      color: #fff;
+    }
+  </style>
 </head>
-<body class="relative overflow-x-hidden">
-    <!-- Sticky order banner -->
-    <div class="sticky-banner fixed bottom-0 left-0 right-0 bg-[var(--wine)] text-white py-4 z-50 shadow-xl">
-        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
-            <div class="flex items-center mb-3 md:mb-0">
-                <div class="mr-4">
-                    <span class="text-xl md:text-2xl font-bold">Rp 250.000</span>
-                    <span class="ml-2 line-through opacity-75">Rp 375.000</span>
-                </div>
-                <div class="px-3 py-1 bg-[var(--cream)] text-[var(--wine)] rounded-full text-xs font-bold">
-                    HEMAT 33%
-                </div>
-            </div>
-            <div>
-                <a href="https://mila.orderonline.id/slim-pouch" 
-                   class="cta-button bg-[var(--cream)] hover:bg-[#e4d9c4] text-[var(--wine)] font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
-                   BELI SEKARANG
-                   <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
-        </div>
-    </div>
+<body>
+  <div class="container">
+    <h1>Lightweight Crossbody Bag</h1>
+    <img src="https://i.imgur.com/3xQfT6T.jpg" alt="Product Image">
+    <p class="price">Only $24.99 USD</p>
 
-    <!-- Header -->
-    <header class="hero-bg">
-        <div class="container mx-auto px-4 pt-8 pb-16">
-            <div class="flex justify-between items-center mb-8">
-                <div>
-                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-[var(--wine)]">Slim Pouch</h1>
-                    <p class="text-lg md:text-xl font-serif italic mt-1 text-[var(--brown)]">by MILA</p>
-                </div>
-                <div class="flex space-x-4">
-                    <a href="#" class="text-[var(--wine)] hover:text-[var(--brown)]">
-                        <i class="fab fa-instagram text-xl"></i>
-                    </a>
-                    <a href="#" class="text-[var(--wine)] hover:text-[var(--brown)]">
-                        <i class="fab fa-whatsapp text-xl"></i>
-                    </a>
-                </div>
-            </div>
+    <!-- PayPal Button -->
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL">
+      <input type="hidden" name="item_name" value="Lightweight Crossbody Bag">
+      <input type="hidden" name="amount" value="24.99">
+      <input type="hidden" name="currency_code" value="USD">
+      <input type="hidden" name="return" value="https://bag.ayunda.xyz/thankyou.html">
+      <input type="submit" class="btn paypal-btn" value="Buy with PayPal">
+    </form>
 
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="w-full md:w-1/2 mb-10 md:mb-0">
-                    <h1 class="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6">
-                        <span class="text-[var(--brown)]">Tas Mini</span> 
-                        <span class="block text-[var(--wine)]">Paling Praktis</span>
-                    </h1>
-                    <p class="text-lg mb-8 text-gray-700 max-w-lg">
-                        Tas selempang premium untuk gaya harianmu. Muat banyak, bahan kulit awet, dan desain stylish untuk semua acara.
-                    </p>
-                    <div class="flex flex-wrap gap-4 mb-8">
-                        <div class="flex items-center">
-                            <i class="fas fa-check-circle text-[var(--wine)] mr-2"></i>
-                            <span>Gratis Pengiriman</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-check-circle text-[var(--wine)] mr-2"></i>
-                            <span>Garansi 1 Tahun</span>
-                        </div>
-                    </div>
-                    <a href="https://mila.orderonline.id/slim-pouch" 
-                       class="inline-block cta-button bg-[var(--wine)] hover:bg-[#5a1b26] text-white font-bold py-4 px-10 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
-                       PESAN SEKARANG
-                       <i class="fas fa-shopping-bag ml-2"></i>
-                    </a>
-                </div>
-
-                <div class="w-full md:w-1/2 flex justify-center relative">
-                    <img src="https://cdn.hotishop.com/image/ae37f589a035ed5e31678a4ec7faf60fe061e274-600.jpeg" 
-                         alt="Slim Pouch Hitam" 
-                         class="product-image w-80 h-80 md:w-96 md:h-96 object-contain rounded-lg">
-                    <div class="absolute bottom-0 right-0 bg-[var(--cream)] rounded-full p-4 shadow-lg">
-                        <div class="flex space-x-1">
-                            <div class="w-3 h-3 bg-[var(--black)] rounded-full"></div>
-                            <div class="w-3 h-3 bg-[var(--brown)] rounded-full"></div>
-                            <div class="w-3 h-3 bg-[var(--wine)] rounded-full"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <!-- Gallery Section -->
-        <section class="py-16 bg-[var(--cream)]">
-            <div class="container mx-auto px-4">
-                <h2 class="font-serif text-3xl md:text-4xl font-bold text-center mb-16 text-[var(--wine)]">Pilihan Warna Elegan</h2>
-                
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 max-w-5xl mx-auto">
-                    <div class="rounded-lg overflow-hidden">
-                        <img src="https://cdn.hotishop.com/image/12381f886bfb2a2e43edd087fe8e0fbf8b361190.jpeg" alt="Slim Pouch Hitam" class="w-full h-64 object-cover">
-                        <p class="mt-3 text-center font-semibold">Hitam Elegant</p>
-                    </div>
-                    <div class="rounded-lg overflow-hidden">
-                        <img src="https://cdn.hotishop.com/image/81bb841dbd6d2fa73df8e900c13be9ea11a3c050.jpeg" alt="Slim Pouch Coklat" class="w-full h-64 object-cover">
-                        <p class="mt-3 text-center font-semibold">Brown Classic</p>
-                    </div>
-                    <div class="rounded-lg overflow-hidden">
-                        <img src="https://cdn.hotishop.com/image/a6f1cdfb871bc62fc3cde17dc1ab66bc61617c65.jpeg" alt="Slim Pouch Wine" class="w-full h-64 object-cover">
-                        <p class="mt-3 text-center font-semibold">Wine Red Premium</p>
-                    </div>
-                    <div class="rounded-lg overflow-hidden">
-                        <img src="https://cdn.hotishop.com/image/a901bff18a6af43d6253017146beb1f71b8f82fd.gif" alt="Slim Pouch Animation 1" class="w-full h-64 object-cover">
-                        <p class="mt-3 text-center font-semibold">Gaya Modern</p>
-                    </div>
-                    <div class="rounded-lg overflow-hidden">
-                        <img src="https://cdn.hotishop.com/image/9f7c23c8532f50237ab4a47c84e9637b648a71a2.gif" alt="Slim Pouch Animation 2" class="w-full h-64 object-cover">
-                        <p class="mt-3 text-center font-semibold">Kemampuan Menyimpan</p>
-                    </div>
-                    <div class="rounded-lg overflow-hidden">
-                        <img src="https://cdn.hotishop.com/image/a34ced4e1cf53290c6af060dda93fb53c5a58c07.gif" alt="Slim Pouch Animation 3" class="w-full h-64 object-cover">
-                        <p class="mt-3 text-center font-semibold">Kualitas Material</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonial Section -->
-        <section class="py-16 bg-white relative overflow-hidden">
-            <div class="absolute inset-0 bg-[var(--wine)] opacity-5"></div>
-            <div class="container mx-auto px-4 relative z-10">
-                <h2 class="font-serif text-3xl md:text-4xl font-bold text-center mb-16 text-[var(--wine)]">Apa Kata Mereka?</h2>
-                
-                <div class="relative py-8 overflow-hidden">
-                    <div class="flex testimonial-slider">
-                        <div class="testimonial-card mx-4 p-6 rounded-xl">
-                            <div class="flex items-center mb-4">
-                                <div class="w-12 h-12 bg-[var(--cream)] rounded-full flex items-center justify-center">
-                                    <span class="text-[var(--wine)] font-bold">DW</span>
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-bold">Dewi Wijaya</h4>
-                                    <div class="flex text-yellow-400">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="text-gray-600">"Tasnya jauh lebih cantik dari yang saya bayangkan! Sangat cocok untuk acara kantor maupun jalan-jalan. Kualitasnya juga premium beneran, padahal harganya terjangkau."</p>
-                        </div>
-                        
-                        <div class="testimonial-card mx-4 p-6 rounded-xl">
-                            <div class="flex items-center mb-4">
-                                <div class="w-12 h-12 bg-[var(--cream)] rounded-full flex items-center justify-center">
-                                    <span class="text-[var(--wine)] font-bold">SR</span>
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-bold">Siti Rahayu</h4>
-                                    <div class="flex text-yellow-400">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="text-gray-600">"Kapasitasnya ternyata muat banyak untuk ukuran yang minimalis. Sekarang saya nggak perlu repot bawa tas besar-besar untuk ke mal atau ngopi sama temen-temen. Very recommended!"</p>
-                        </div>
-                        
-                        <div class="testimonial-card mx-4 p-6 rounded-xl">
-                            <div class="flex items-center mb-4">
-                                <div class="w-12 h-12 bg-[var(--cream)] rounded-full flex items-center justify-center">
-                                    <span class="text-[var(--wine)] font-bold">AP</span>
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-bold">Anita Purwati</h4>
-                                    <div class="flex text-yellow-400">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="text-gray-600">"Warnanya yang wine red sangat unik dan elegan. Strapnya juga bisa diatur sehingga nyaman digunakan. Sekarang jadi sering dipakai untuk berbagai acara."</p>
-                        </div>
-                        
-                        <div class="testimonial-card mx-4 p-6 rounded-xl">
-                            <div class="flex items-center mb-4">
-                                <div class="w-12 h-12 bg-[var(--cream)] rounded-full flex items-center justify-center">
-                                    <span class="text-[var(--wine)] font-bold">LS</span>
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-bold">Linda Suryani</h4>
-                                    <div class="flex text-yellow-400">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="text-gray-600">"Kulitnya sangat halus dan tidak mudah kotor. Saya sering membersihkan hanya dengan lap basah dan langsung kinclong kembali. Pengiriman cepat juga, sesuai ekspektasi!"</p>
-                        </div>
-                        
-                        <div class="testimonial-card mx-4 p-6 rounded-xl">
-                            <div class="flex items-center mb-4">
-                                <div class="w-12 h-12 bg-[var(--cream)] rounded-full flex items-center justify-center">
-                                    <span class="text-[var(--wine)] font-bold">BD</span>
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-bold">Bella Dewi</h4>
-                                    <div class="flex text-yellow-400">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="text-gray-600">"Tasnya sangat nyaman dipakai seharian, tidak membuat bahu pegal. Kualitas resletingnya juga bagus, tidak macet-macet. Sekarang sudah jadi tas favorit sehari-hari saya."</p>
-                        </div>
-                        
-                        <div class="testimonial-card mx-4 p-6 rounded-xl">
-                            <div class="flex items-center mb-4">
-                                <div class="w-12 h-12 bg-[var(--cream)] rounded-full flex items-center justify-center">
-                                    <span class="text-[var(--wine)] font-bold">MM</span>
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-bold">Maya Meutia</h4>
-                                    <div class="flex text-yellow-400">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="text-gray-600">"Desainnya modern tapi timeless, cocok untuk segala usia. Sudah membeli untuk hadiah ibu dan dia sangat suka. Kualitas packaging juga rapi dan aman."</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Countdown Section -->
-        <section class="py-16 bg-[var(--brown)]">
-            <div class="container mx-auto px-4 text-center">
-                <h2 class="font-serif text-3xl md:text-4xl font-bold mb-4 text-white">Diskon Spesial Terbatas!</h2>
-                <p class="text-xl mb-8 text-white max-w-2xl mx-auto">Dapatkan Slim Pouch dengan harga spesial hanya untuk waktu terbatas</p>
-                
-                <div class="max-w-lg mx-auto">
-                    <div class="countdown-box p-6 mb-8">
-                        <div id="countdown" class="flex justify-center space-x-4 md:space-x-8 text-white">
-                            <div class="flex flex-col items-center">
-                                <span class="text-3xl md:text-5xl font-bold" id="hours">00</span>
-                                <span class="text-sm">Jam</span>
-                            </div>
-                            <div class="flex flex-col items-center">
-                                <span class="text-3xl md:text-5xl font-bold" id="minutes">00</span>
-                                <span class="text-sm">Menit</span>
-                            </div>
-                            <div class="flex flex-col items-center">
-                                <span class="text-3xl md:text-5xl font-bold" id="seconds">00</span>
-                                <span class="text-sm">Detik</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <p class="text-lg text-white mb-6">Hanya <span class="font-bold">25% Stok</span> tersisa dengan harga diskon ini!</p>
-                    <a href="https://mila.orderonline.id/slim-pouch" 
-                       class="inline-block cta-button bg-[var(--cream)] hover:bg-[#e4d9c4] text-[var(--wine)] font-bold py-4 px-10 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
-                       DAPATKAN DISKON SEKARANG
-                       <i class="fas fa-gift ml-2"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section class="py-16 bg-white">
-            <div class="container mx-auto px-4">
-                <h2 class="font-serif text-3xl md:text-4xl font-bold text-center mb-12 text-[var(--wine)]">Pertanyaan Umum</h2>
-                
-                <div class="max-w-3xl mx-auto">
-                    <div class="mb-6">
-                        <h3 class="font-bold text-lg flex items-center">
-                            <i class="fas fa-question-circle text-[var(--wine)] mr-3"></i>
-                            Apakah tas ini muat untuk smartphone ukuran besar?
-                        </h3>
-                        <p class="mt-2 pl-8 text-gray-600">Ya, Slim Pouch dirancang khusus untuk smartphone modern dengan ukuran sampai 6.7 inci. Kompartemen smartphone terpisah memastikan HP Anda aman dan mudah diakses.</p>
-                    </div>
-                    
-                    <div class="mb-6">
-                        <h3 class="font-bold text-lg flex items-center">
-                            <i class="fas fa-question-circle text-[var(--wine)] mr-3"></i>
-                            Bagaimana cara perawatan tas ini?
-                        </h3>
-                        <p class="mt-2 pl-8 text-gray-600">Material kulit sintetis premium kami mudah dirawat. Cukup lap dengan kain basah jika terkena kotoran, lalu keringkan dengan kain lembut. Jauhkan dari sumber panas langsung.</p>
-                    </div>
-                    
-                    <div class="mb-6">
-                        <h3 class="font-bold text-lg flex items-center">
-                            <i class="fas fa-question-circle text-[var(--wine)] mr-3"></i>
-                            Berapa lama estimasi pengiriman ke kota saya?
-                        </h3>
-                        <p class="mt-2 pl-8 text-gray-600">Kami menggunakan ekspedisi terpercaya dengan estimasi pengiriman 2-5 hari kerja setelah pembayaran dikonfirmasi, tergantung lokasi Anda. Jakarta dan sekitarnya biasanya lebih cepat.</p>
-                    </div>
-                    
-                    <div class="mb-6">
-                        <h3 class="font-bold text-lg flex items-center">
-                            <i class="fas fa-question-circle text-[var(--wine)] mr-3"></i>
-                            Apakah tersedia garansi?
-                        </h3>
-                        <p class="mt-2 pl-8 text-gray-600">Kami memberikan garansi 1 tahun untuk cacat produksi. Jika ada masalah kualitas, Anda dapat menghubungi customer service kami untuk penggantian.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Final CTA Section -->
-    <section class="py-16 bg-gradient-to-b from-[var(--cream)] to-[var(--brown)]">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="font-serif text-3xl md:text-5xl font-bold mb-6 text-[var(--wine)]">Tas Favorit Harianmu</h2>
-            <p class="text-xl mb-10 max-w-2xl mx-auto text-gray-700">Gaya stylish, muat semua kebutuhan</p>
-            
-            <div class="bg-white rounded-2xl shadow-xl p-8 max-w-2xl mx-auto mb-10">
-                <div class="flex justify-center mb-6">
-                    <img src="https://cdn.hotishop.com/image/21116826b3c4e73c37deee793d4f994c9dc6c8a8-600.webp" alt="Slim Pouch" class="w-64">
-                </div>
-                
-                <div class="flex flex-wrap justify-center gap-4 mb-8">
-                    <div class="text-left">
-                        <p class="line-through text-gray-500 text-xl">Rp 375.000</p>
-                        <p class="text-3xl font-bold text-[var(--wine)]">Rp 250.000</p>
-                    </div>
-                    <div class="bg-[var(--cream)] px-4 py-2 rounded-full">
-                        <p class="font-bold text-[var(--wine)]">GRATIS Ongkir ke seluruh Indonesia</p>
-                    </div>
-                </div>
-                
-                <a href="https://mila.orderonline.id/slim-pouch" 
-                   class="inline-block cta-button bg-[var(--wine)] hover:bg-[#5a1b26] text-white font-bold py-4 px-12 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg mb-4">
-                   <i class="fas fa-shopping-cart mr-3"></i>PESAN SEKARANG
-                </a>
-                
-                <p class="text-sm mt-4 text-gray-500"><i class="fas fa-shield-alt mr-2"></i>Transaksi Aman | 100% Garansi | Gratis Pengembalian</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-[var(--black)] text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0">
-                    <h3 class="text-2xl font-serif font-bold">Slim Pouch</h3>
-                    <p class="text-[var(--cream)] italic">by MILA</p>
-                </div>
-                
-                <div class="flex space-x-6">
-                    <a href="#" class="text-xl hover:text-[var(--cream)]">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" class="text-xl hover:text-[var(--cream)]">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="#" class="text-xl hover:text-[var(--cream)]">
-                        <i class="fab fa-tiktok"></i>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="mt-12 pt-6 border-t border-gray-700 text-center text-gray-400 text-sm">
-                <p>&copy; 2023 MILA Fashion. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Countdown timer (24 hours from now)
-        const countDownDate = new Date().getTime() + (24 * 60 * 60 * 1000);
-        
-        const countdownFunction = setInterval(function() {
-            const now = new Date().getTime();
-            const distance = countDownDate - now;
-            
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            
-            document.getElementById("hours").innerHTML = hours.toString().padStart(2, "0");
-            document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, "0");
-            document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, "0");
-            
-            if (distance < 0) {
-                clearInterval(countdownFunction);
-                document.getElementById("countdown").innerHTML = "PROMO TELAH BERAKHIR";
-            }
-        }, 1000);
-        
-        // Track CTA clicks
-        document.querySelectorAll('.cta-button').forEach(button => {
-            button.addEventListener('click', function(e) {
-                e.preventDefault();
-                // Track conversion event here (analytics code)
-                window.location.href = 'https://mila.orderonline.id/slim-pouch';
-            });
-        });
-        
-        // Mobile menu toggle (not implemented in this design)
-    </script>
+    <!-- Stripe Button -->
+    <form action="STRIPE_LINK" method="GET" target="_blank">
+      <button type="submit" class="btn stripe-btn">Pay with Credit Card</button>
+    </form>
+  </div>
 </body>
 </html>
